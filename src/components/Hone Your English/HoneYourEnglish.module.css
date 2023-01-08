@@ -1,0 +1,118 @@
+.section{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 3rem 2rem;
+    padding-bottom: 5rem;
+    margin-top: 2rem;
+}
+.left{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.right{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.heading{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 3rem;
+line-height: 68px;
+color: #001F27;
+letter-spacing: -0.01em;
+font-feature-settings: 'liga' off;
+width: 80%;
+}
+.subHeading{
+    color: #139980;
+}
+.info{
+    width: 80%;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+color: #001F27;
+letter-spacing: -0.01em;
+font-feature-settings: 'liga' off;
+margin-top: 1.5rem;
+}
+.buttonCont{
+    display: flex;
+    width: 80%;
+    margin-top: 1.5rem;
+}
+
+.btn1{
+    padding: 15px 32px;
+    background: #FF736A;
+border-radius: 80px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+letter-spacing: -0.01em;
+color: #FFFFFF;
+border: none;
+}
+
+.btn2{
+    padding: 15px 32px;
+    border-radius: 80px;
+    background: transparent;
+    border: 2px solid #FF736A;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+letter-spacing: -0.01em;
+color: #FF736A;
+margin: auto;
+}
+
+.imageCont{
+    width: 400px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 11px;
+}
+
+@media(max-width:1120px){
+    .section{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+    .btn1{
+        margin: auto;
+    }
+    .right{
+        margin-top: 3rem;
+    }
+    .heading,.info,.buttonCont{
+        width: 70%;
+    }
+    .heading{
+        font-size: 2.5rem;
+        line-height: 48px;
+    }
+}
+
+@media(max-width:700px){
+    .heading,.info,.buttonCont{
+        width: 90%;
+    }   
+}
+@media(max-width:600px){
+    .heading,.info,.buttonCont{
+        width: 98%;
+    }   
+}

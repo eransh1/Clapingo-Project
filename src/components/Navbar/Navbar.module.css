@@ -1,0 +1,57 @@
+.navbarBackground{
+    background-color: white!important;
+    height: 80px!important;
+    z-index: 9999;
+}
+.brandLogo{
+    width: 153px;
+    height: 42px;
+    margin-left: 5rem;
+    
+}
+.navItem{
+   padding:1rem;
+}
+.navLink{
+   text-decoration: none;
+   font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+color: #060606;
+margin-right: 2rem; 
+margin-bottom: 1rem;
+cursor: pointer;
+}
+.userImg{
+    margin-right: .5rem;
+}
+.loginBtn{
+    padding: 10px 24px;
+    background: linear-gradient(360deg, #52A49A -65.93%, #00CDAC 100%);
+border-radius: 80px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+color: #FFFFFF;
+border: none;
+margin-right: 5rem;
+}
+
+@media(max-width:1240px){
+    .brandLogo{
+        margin-left: 1rem;
+    }
+    .loginBtn{
+        margin-right: 1rem;
+    }
+}
+
+@media(max-width:1080px){
+    .navLink{
+        margin-right: .5rem;
+    }
+}

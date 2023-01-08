@@ -1,0 +1,92 @@
+.section{
+    margin-bottom: 5rem;
+    display: flex;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.heading{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 52px;
+letter-spacing: -0.01em;
+color: #001F27;
+margin-bottom: 2.5rem;
+}
+.mainCont{
+    display: flex;
+}
+.card1{
+    background: #FFFFFF;
+    box-shadow: 0 26px 33px rgb(204, 210, 212, 0.56);
+/* box-shadow: 26px 26px 33px rgba(204, 210, 212, 0.56); */
+border-radius: 12px;
+width: 379px;
+height: 175px;
+padding: 2rem 1rem;
+margin: auto;
+}
+.cardHeading{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 32px;
+letter-spacing: -0.01em;
+color: #001F27;
+}
+.cardInfo{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+letter-spacing: -0.01em;
+font-feature-settings: 'liga' off;
+color: #808F93;
+width: 300px;
+}
+.cardConatiner{
+    display: flex;
+    flex-direction: column;
+}
+.mobile{
+    margin: auto;
+
+}
+.mobileImage{
+    width: 235px;
+height: 510px;
+border-radius: 18px;
+}
+
+.top{
+    display: flex;
+}
+
+.mainCont1{
+    display: flex;
+    flex-direction: column;
+}
+.cardConatiner1{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.card1{
+    margin-bottom: 1.5rem;
+}
+.mobile1{
+    margin: auto;
+    margin-top: 3.5rem;
+}
+
+@media(max-width:1020px){
+    .container{
+        width: 90%;
+        margin: auto;
+    }  
+}

@@ -1,0 +1,95 @@
+.section{
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+.sectionHeading{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 52px;
+text-align: center;
+letter-spacing: -0.01em;
+color: #001F27;
+margin-bottom: 2rem;
+}
+.offerCont{
+    width: 80%;
+    margin: auto;
+}
+.cardCont{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 20px;
+}
+.card1{
+    background-image: url(../../images//card1.jpeg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+    border-radius: 21px;
+    position: relative;
+    height: 400px;
+}
+/* .top{
+    height: 260px;
+    background: transparent;
+    
+} */
+.bottom{
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(196, 196, 196, 0) -14.34%, #C4C4C4 116.43%);
+backdrop-filter: blur(32.5px);
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 1rem;
+padding-bottom: 1rem;
+width: 100%;
+border-bottom-left-radius: 21px;
+border-bottom-right-radius: 21px;
+
+}
+.cardHeading{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+color: #00D2FF;
+width: 80%;
+}
+.cardInfo{
+    
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+letter-spacing: -0.01em;
+font-feature-settings: 'liga' off;
+color: #FFFFFF;
+width: 80%;
+}
+
+.card2{
+    background-image: url(../../images//card2.jpeg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+    border-radius: 21px;
+    position: relative;
+    height: 400px;   
+}
+.card3{
+    background-image: url(../../images//card3.jpeg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+    border-radius: 21px;
+    position: relative;
+    height: 400px;
+}

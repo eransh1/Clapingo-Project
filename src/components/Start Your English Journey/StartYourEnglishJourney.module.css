@@ -1,0 +1,144 @@
+.section2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 5rem;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, #00D2FF -13.02%, rgba(0, 210, 255, 0) 103.77%);
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.top{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+.bottom{
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+.smallCont{
+    width: 205px;
+height: 96px;
+background: #3A3636;
+border-radius: 12px;
+margin: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.bottomLeftSmallCont{
+    margin-left: 5rem;
+}
+.smallContHeading{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 48px;
+color: white;
+text-align: center;
+margin-bottom: 0;
+}
+.smallContSubHeading{
+    color: #139980;
+}
+.info{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+letter-spacing: -0.01em;
+color: #FFFFFF;
+text-align: center;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.rightInfoTop{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+color: #139980;
+}
+.rightHeading{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 52px;
+color: #001F27;
+width: 70%;
+}
+.rightInfo{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #001F27;
+width: 60%;
+}
+.rightButton{
+    padding: 15px 24px;
+    background: #FF736A;
+border-radius: 80px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: -0.01em;
+color: #FFFFFF;
+border: none;
+width: 20%;
+}
+
+@media(max-width:1120px){
+    .section2{
+        display: flex;
+        flex-direction: column;
+    }  
+    .right{
+        align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+}
+@media(max-width:700px){
+    .rightHeading {
+width: 90%;
+text-align: center;
+    }
+    .rightInfo{
+        width: 85%;
+        margin-top: 1rem;
+    }
+    .rightButton{
+        width: 40%;
+    }
+    .top{
+        width: 90%;
+    }
+    .bottom{
+        width: 90%;
+    }
+}
+@media(max-width:600px){
+    .bottomLeftSmallCont{
+        margin-left: 1rem;
+    }  
+}
