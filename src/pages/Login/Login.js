@@ -79,8 +79,8 @@ return
         <div className={styles.left}>
           <h3 className={styles.heading}>Login</h3>
           <div className={styles.loginForm}>
-            <input onChange={handleInputChange} className={styles.input} type="text" placeholder='Your Username' name='email' value={loginDetails.email} />
-            <input onChange={handleInputChange} className={styles.input} type="password" placeholder='Your Password' name='pass' value={loginDetails.pass}/>
+            <input onChange={handleInputChange} className={styles.input} type="text" placeholder='Enter Username' name='email' value={loginDetails.email} />
+            <input onChange={handleInputChange} className={styles.input} type="password" placeholder='Enter Password' name='pass' value={loginDetails.pass}/>
             <button onClick={loginIfValid} className={styles.login}>Login</button>
           </div>
 
