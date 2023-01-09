@@ -50,7 +50,7 @@ const SignUpIfValid=()=>{
   let accountArray
   if(accountDeatil===null){accountArray=[]}
   else if(accountDeatil!==null){accountArray=accountDeatil}
-if(userEmailArray.includes(signUpDetails.email)){toast.error("Username Alread Registered");return}
+if(userEmailArray.includes(signUpDetails.email)){toast.error("UserID Alread Registered");return}
   localStorage.setItem("accountDetails",JSON.stringify([...accountArray,signUpDetails]))
   localStorage.setItem("currentLogedIn",JSON.stringify(signUpDetails))
   toast.success("Registered")
@@ -64,7 +64,7 @@ if(userEmailArray.includes(signUpDetails.email)){toast.error("Username Alread Re
         <div className={styles.left}>
           <h3 className={styles.heading}>SignUp</h3>
           <div className={styles.loginForm}>
-            <input onChange={handleInputChange} className={styles.input} type="text" placeholder='Enter UserName' name='email' value={signUpDetails.email} />
+            <input onChange={handleInputChange} className={styles.input} type="text" placeholder='Enter UserID' name='email' value={signUpDetails.email} />
             <input onChange={handleInputChange} className={styles.input} type="password" placeholder='Enter Password' name='pass' value={signUpDetails.pass}/>
             <button onClick={SignUpIfValid} className={styles.login}>SignUp</button>
           </div>

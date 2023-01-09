@@ -68,7 +68,7 @@ return
     return
   })
  }
- if(!accountEmailsArray.includes(loginDetails.email)){toast.error("Username Does Not Exist In Our Database");return}
+ if(!accountEmailsArray.includes(loginDetails.email)){toast.error("UserID Does Not Exist In Our Database");return}
 }
 
   return (
@@ -79,7 +79,7 @@ return
         <div className={styles.left}>
           <h3 className={styles.heading}>Login</h3>
           <div className={styles.loginForm}>
-            <input onChange={handleInputChange} className={styles.input} type="text" placeholder='Enter Username' name='email' value={loginDetails.email} />
+            <input onChange={handleInputChange} className={styles.input} type="text" placeholder='Enter UserID' name='email' value={loginDetails.email} />
             <input onChange={handleInputChange} className={styles.input} type="password" placeholder='Enter Password' name='pass' value={loginDetails.pass}/>
             <button onClick={loginIfValid} className={styles.login}>Login</button>
           </div>
