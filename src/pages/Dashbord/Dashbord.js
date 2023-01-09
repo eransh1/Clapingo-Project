@@ -10,7 +10,9 @@ const[userData,setUserData]=useState()
 
 
 useEffect(()=>{
-  toast.success("You Are Logged In")
+  const data=localStorage.getItem("currentLogedIn")
+if(data){  toast.success("You Are Logged In");return;}
+
 },[])
 
 //HANDLE LOGOUT
