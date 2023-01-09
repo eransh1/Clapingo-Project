@@ -23,10 +23,19 @@ const handleLogOut=()=>{
 }
 
 
+//CHECK IF USER IS LOGGED IN
+
+useEffect(()=>{
+const data=localStorage.getItem("currentLogedIn")
+if(data){return;}
+navigate("/")
+},[])
+
 //GET CURRENT LOGED IN USER DATA
 useEffect(()=>{
   const data=localStorage.getItem("currentLogedIn")
-  if(data){setUserData(JSON.parse(data))}
+  if(data){setUserData(JSON.parse(data));return}
+  
 },[])
 
   return (
